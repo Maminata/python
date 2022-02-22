@@ -1,0 +1,17 @@
+class Maison:
+    def __init__(self, pays,ville,adresse,code_postal):
+        self.pays = pays
+        self.ville = ville
+        self.adresse = adresse
+        self.code_postal=code_postal
+
+    def __repr__(self):
+        return f" Pays:{self.pays}\n Ville:{self.ville}\n adresse:{self.adresse} \n code_postal:{self.code_postal}"
+    def demenager(self):
+        print(f"Le pays:{self.pays} et la ville:{self.ville}\n Quitter le pays \n Bye le monde")
+        return "Quitter le pays \n Bye le monde"
+
+
+ma_maison = Maison("Canada", "Toronto", "1 Yonge St", "M3S 1G7")
+print(ma_maison)
+ma_maison.demenager()
