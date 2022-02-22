@@ -1,0 +1,26 @@
+# creation d'une classe
+
+class Citron:
+
+    # constructeur
+
+    def __init__(self, couleur, prix,forme):
+        # attribut
+
+        self.couleur = couleur
+
+        self.prix = prix
+
+        self.forme = forme
+
+    def modifieForme(self):
+        print(f"La nouvelle forme est: {self.forme}")
+
+    def changer_couleur(self):
+        print(f"ma_citron est de couleur:{self.couleur} et le prix est: {self.prix} ")
+
+
+if __name__ == "__main__":
+    ma_citron = Citron("Jaune", "15$","Cercle")
+    ma_citron.changer_couleur()
+    ma_citron.modifieForme()
