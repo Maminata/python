@@ -1,0 +1,18 @@
+# creation d'une classe
+# Autre facon
+class Citron:
+
+    # constructeur
+
+    def __init__(self, couleur, prix):
+        # attribut
+
+        self.couleur = couleur
+
+        self.prix = prix
+
+
+if __name__ == "__main__":
+    ma_citron = Citron("bleue", "20")
+
+    print("citron:", ma_citron.__dict__)
